@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .form-control {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="myForm">
+        <div class="form-control">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <small class="error" id="nameError"></small>
+        </div>
+        <div class="form-control">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <small class="error" id="emailError"></small>
+        </div>
+        <div class="form-control">
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile">
+            <small class="error" id="mobileError"></small>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // Function to validate the form
+        function validateForm(event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            // Get form field values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const mobile = document.getElementById('mobile').value;
+
+            // Regex patterns for validation
+            const namePattern = /^[A-Za-z\s]+$/; // Only letters and spaces
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Basic email format
+            const mobilePattern = /^[0-9]{10}$/; // 10 digits for mobile number
+
+            // Validation flags
+            let isValid = true;
+
+            // Name validation
+            if (name === "" || !namePattern.test(name)) {
+                document.getElementById('nameError').textContent = "Please enter a valid name (letters only).";
+                isValid = false;
+            } else {
+                document.getElementById('nameError').textContent = "";
+            }
+
+            // Email validation
+            if (email === "" || !emailPattern.test(email)) {
+                document.getElementById('emailError').textContent = "Please enter a valid email address.";
+                isValid = false;
+            } else {
+                document.getElementById('emailError').textContent = "";
+            }
+
+            // Mobile number validation
+            if (mobile === "" || !mobilePattern.test(mobile)) {
+                document.getElementById('mobileError').textContent = "Please enter a valid 10-digit mobile number.";
+                isValid = false;
+            } else {
+                document.getElementById('mobileError').textContent = "";
+            }
+
+            // If the form is valid, submit the form (for demonstration, alert a success message)
+            if (isValid) {
+                alert("Form submitted successfully!");
+            }
+        }
+
+        // Attach the validation function to form's submit event
+        document.getElementById('myForm').addEventListener('submit', validateForm);
+    </script>
+</body>
+</html>
