@@ -1,0 +1,42 @@
+/* Styles for HTML Elements */
+
+h1 {
+    color: blue; 
+    background-color: yellow;
+    text-align: center;
+}
+
+h2 {
+    color: white; 
+    background-color: green;
+    padding: 10px;
+}
+
+p {
+    color: black; 
+    background-color: lightgray;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Styles for Classes */
+
+.id-selector {
+    color: red; 
+    background-color: black;
+    padding: 10px;
+}
+
+.class-selector {
+    color: orange; 
+    background-color: purple;
+    padding: 10px;
+}
+
+/* Styles for ID */
+
+#unique-id {
+    color: pink; 
+    background-color: brown;
+    padding: 10px;
+}
