@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Light Bulb Toggle</title>
+</head>
+<body>
+
+    <!-- Image of the light bulb -->
+    <img id="bulb" src="bulb_off.png" alt="Light Bulb" width="150">
+
+    <br><br>
+
+    <!-- Buttons to control the light -->
+    <button onclick="turnOn()">Turn on the light</button>
+    <button onclick="turnOff()">Turn off the light</button>
+
+    <script>
+        // Function to turn the light on
+        function turnOn() {
+            document.getElementById('bulb').src = 'bulb_on.png';
+        }
+
+        // Function to turn the light off
+        function turnOff() {
+            document.getElementById('bulb').src = 'bulb_off.png';
+        }
+    </script>
+
+</body>
+</html>
