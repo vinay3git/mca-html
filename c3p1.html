@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Change Background Color</title>
+</head>
+<body>
+    <button id="colorButton">Change Background Color</button>
+
+    <script>
+        // Get the button element by its ID
+        const button = document.getElementById('colorButton');
+
+        // Function to change background color to red
+        function changeToRed() {
+            document.body.style.backgroundColor = 'red';
+        }
+
+        // Function to change background color to green
+        function changeToGreen() {
+            document.body.style.backgroundColor = 'green';
+        }
+
+        // Add event listener for single click (click event)
+        button.addEventListener('click', changeToRed);
+
+        // Add event listener for double click (dblclick event)
+        button.addEventListener('dblclick', changeToGreen);
+    </script>
+</body>
+</html>
