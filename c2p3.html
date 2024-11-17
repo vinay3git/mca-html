@@ -1,77 +1,35 @@
 <html>
-
-<head> 
-    <title>Stripped Table</title>
-    <style>
-	body {
-	    
-	    height:100vh;
-	    //background-color: grey;
-	}
-	.wrapper {
-	     position:relative;
-	   
-	     height: 100%;
-	}
-	.wrapper #table {
-	    position:absolute;
-	    top:50%;
-	    font-family: sans-serif;
-	    transform: translateY(-50%);
-	    width:100%;
-	    //background-color: red;
-	}
-	#table tr:not(thead tr) {
-	    background-color: #f2f2f2;
-	}
-	#table thead {
-	    padding: 20px 0;
-	    color: white;
-	    background-color: #b22222;
-	    border:1px solid grey;
-	}
-	#table th, #table td {
-	    padding: 1rem 0;
-	    text-align:center;
-	}
-	//#table tr:not(thead tr):nth-child(odd) {
-	//    background-color: #e2e2e2;
-	//}
-	#table tr:not(thead tr):nth-child(odd):hover {
-    	    background-color: burlywood;
-	}
-	#table tr:nth-child(even):hover {
-	    background-color:lightgreen;
-	}
-    </style>
+<head>
+    <title>Sample Output Table</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="wrapper">
-    <table id="table"  border="1">
-	    <tr>
-		<th>S.L No.</th>
-		<th>Admission No.</th>
-		<th>Name</th>
-		<th>Email_id</th>
-	    </tr>
-
+    <table id="sTable">
+        <thead>
             <tr>
-            	<td>1</td>
-            	<td>101</td>
-            	<td>Amal</td>
+                <th>SL.No:</th>
+                <th>Admission No:</th>
+                <th>Name</th>
+                <th>Email Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>101</td>
+                <td>Amal</td>
             	<td>amal101@rit</td>
             </tr>
-	    <tr>
+            <tr>
                 <td>2</td>
             	<td>102</td>
                 <td>Nisha</td>
                 <td>nisha102@rit</td>
             </tr>
-	    <tr>
+            <tr>
                 <td>3</td>
             	<td>103</td>
-                <td>Reji/td>
+                <td>Reji</td>
                 <td>reji103@rit</td>
             </tr>
             <tr>
@@ -80,8 +38,7 @@
                 <td>Waseem</td>
                 <td>waseem104@rit</td>
             </tr>
+        </tbody>
     </table>
-    </div>
 </body>
-
 </html>
