@@ -1,63 +1,136 @@
 <html>
-	<head>
-		<title>Student Registration</title>
-	</head>
-	<body>
-		<h1>STUDENT REGISTRATION FORM</H1>
-		<form>
-			<table border='1' cellpadding='10'>
-				<tr>
-					<th>First Name</th>
-					<td><input type="text" maxlength='30'>(MAX 30 CHARACTERS)</td>
-				</tr>
-				<tr>
-					<th>Last Name</th>
-					<td><input type="text" maxlength='30'>(MAX 30 CHARACTERS)</td>
-				</tr>
-				<tr>
-					<th>Date of Birth</th>
-					<td>Day: <select><option>1</option>
-						         <option>2</option>
-						         <option>3</option>
-						         <option>4</option>
-						         <option>5</option>
-						 </select>			
-					</td>
-					<td>Month: <select><option>1</option>
-						         <option>2</option>
-						         <option>3</option>
-						         <option>4</option>
-						         <option>5</option>
-						 </select>			
-					</td>
-					<td>Year: <select><option>2001</option>
-						         <option>2002</option>
-						         <option>2003</option>
-						         <option>2004</option>
-						         <option>2005</option>
-						 </select>			
-					</td>
-				</tr>
-				<tr>
-					<td>Email ID</td>
-					<td><input type="email"></td>
-				</tr>
-				<tr>
-					<td>Mobile Number</td>
-					<td><input type="text" maxlength='10'>(10-digit number)</td>
-				</tr>
-				<tr>
-					<td>Gender</td>
-					<td><input type="radio" name="gender">Male
-					    <input type="radio" name="gender">Female
-					</td>
-				</tr>
-				<tr>
-					<td>Address</td>
-					<td><textarea rows="3" cols="15"></textarea></td>
-				</tr>
-				<tr>
-					<td>City</td>
-					<td><input type="text" maxlength='30'>(MAX 30 CHARACTERS)</td>
-				</tr>
-				<tr>
+<body>
+    <h2 style="text-align:center">STUDENT REGISTRATION FORM</h2>
+    <form>
+        <table align="center" border="1" cellpadding="10">
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type="text" maxlength="30">(max 30 Characters)</td>
+            </tr>
+            <tr>
+                <td>LAST NAME</td>
+                <td><input type="text" maxlength="30">(max 30 Characters)</td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td>
+                    <select>
+                        <option>1</option> <option>2</option> <option>3</option>
+                        <option>4</option> <option>5</option> <option>6</option>
+                        <option>7</option> <option>8</option> <option>9</option>
+                        <option>10</option> <option>11</option> <option>12</option>
+                        <option>13</option> <option>14</option> <option>15</option>
+                        <option>16</option> <option>17</option> <option>18</option>
+                        <option>19</option> <option>20</option> <option>21</option>
+                        <option>22</option> <option>23</option> <option>24</option>
+                        <option>25</option> <option>26</option> <option>27</option>
+                        <option>28</option> <option>29</option> <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <select>
+                        <option>Jan</option> <option>Feb</option> <option>Mar</option>
+                        <option>Apr</option> <option>May</option> <option>Jun</option>
+                        <option>Jul</option> <option>Aug</option> <option>Set</option>
+                        <option>Oct</option> <option>Nov</option> <option>Dec</option>
+                    </select>
+                    <select>
+                        <option>1996</option> <option>1997</option> <option>1998</option>
+                        <option>1999</option> <option>2000</option> <option>2001</option>
+                        <option>2002</option> <option>2003</option> <option>2004</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>EMAIL-ID</td> <td><input type="email" ></td>
+            </tr>
+            <tr>
+                <td>MOBILE NUMBER</td> 
+    <td><input type="text" maxlength=”10”>(10 digit number)</td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td><input type="radio" name="gen" value="MALE">Male<input type="radio" name="gen" value="FEMALE">Female</td>
+            </tr>
+            <tr>
+                <td>ADDRESS</td> <td><textarea rows="3" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <td>CITY</td> <td><input type="text">(max 30 Characters)</td>
+            </tr>
+            <tr>
+                <td>PINCODE</td> <td><input type="text">(6-digit number)</td>
+            </tr>
+            <tr>
+                <td>STATE</td> <td><input type="text">(max 30 Characters)</td>
+            </tr>
+            <tr>
+                <td>COUNTRY</td> <td><input type="text" value="INDIA"></td>
+            </tr>
+            <tr>
+                <td>HOBBIES</td>
+                <td><input type="checkbox">Drawing<input type="checkbox">Singing<input type="checkbox">Dancing<input type="checkbox">Sketching<br> <input type="checkbox">Others<input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>QUALIFICATION</td>
+                <td>
+                    <table border=”1” cellpadding=”5”>
+                        <tr>
+                            <th>SI NO:</th>
+                            <th>Examination</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Class X</th>
+                            <td><input type="text" maxlength=”10”></td>    
+                            <td><input type="text" maxlength=”5”></td>
+                            <td><input type="text" maxlength=”4”></td>                    
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Class XII</th>
+    <td><input type="text" maxlength=”10”></td>    
+                            <td><input type="text" maxlength=”5”></td>
+                            <td><input type="text" maxlength=”4”></td>                    
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Graduation</th>
+    <td><input type="text" maxlength=”10”></td>    
+                            <td><input type="text" maxlength=”5”></td>
+                            <td><input type="text" maxlength=”4”></td>                    
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Masters</th>
+                            <td><input type="text" maxlength=”10”></td>    
+                            <td><input type="text" maxlength=”5”></td>
+                            <td><input type="text" maxlength=”4”></td>                    
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>COURSES<br>APPLIED FOR</td>
+                <td>MCA<input type="radio">M.Tech<input type="radio">M.Sc.<input type="radio">PhD<input type="radio"></td>
+            </tr>
+            <tr>
+                <td>TYPE YOUR PASSWORD</td>
+                <td><input type="password">(Max. 30 Characters)</td>
+            </tr>
+            <tr>
+                <td>UPLOAD YOUR PHOTO</td> <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>DATE OF TC</td> <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align=”center”><input type="submit" value="SUBMIT"><input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
