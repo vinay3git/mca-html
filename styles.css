@@ -1,15 +1,18 @@
+/* General Styles */
 body {
     font-family: sans-serif;
     background-color: white;
     margin: 20px;
 }
 
+/* Table Styles */
 #sTable {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
+/* Table Header */
 #sTable th {
     padding: 20px 0;
     text-align: left;
@@ -18,6 +21,7 @@ body {
     border: 1px solid grey;
 }
 
+/* Table Rows */
 #sTable td {
     padding: 8px;
     border: 1px solid grey;

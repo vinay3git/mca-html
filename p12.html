@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Change Background Color</title>
+    <style>
+    	body{
+    		text-align:center;    		
+    	}
+    </style>
+</head>
+<body>
+    <button id="button">Change Background Color</button>
+    <br><br>
+    <p>Single-click changes color to Red.<br><br>Double-click changes color to Green.</p>
+
+    <script>
+        const button = document.getElementById('button');
+        function changeToRed() {
+            document.body.style.backgroundColor = 'red';
+        }
+
+        function changeToGreen() {
+            document.body.style.backgroundColor = 'green';
+        }
+        button.addEventListener('click', changeToRed);
+        button.addEventListener('dblclick', changeToGreen);
+    </script>
+</body>
+</html>
